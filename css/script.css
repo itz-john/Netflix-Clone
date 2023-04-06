@@ -1,0 +1,13 @@
+.horizontal {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.profile {
+    background-color: black;
+    width: max-content;
+    font-weight: 550;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+}

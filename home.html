@@ -1,0 +1,275 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="path-to-logo-file/Netflix_Symbol_RGB.ico" type="image/x-icon">
+  <title>Netflix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+		function toggleOptions() {
+			var options = document.getElementById("options");
+			if (options.style.display === "none") {
+				options.style.display = "block";
+			} else {
+				options.style.display = "none";
+			}
+		}
+	</script>
+  <style>
+    .video-fullscreen {
+      width: 640px;
+      height: 360px;
+      transition: width 0.5s ease-out, height 0.5s ease-out;
+    }
+
+    .video-fullscreen {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      transition: transform 0.3s ease-out;
+    }
+
+    .image-container:hover img {
+      transform: scale(0.9);
+    }
+
+    .image-container:hover:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid;
+      transition: opacity 0.3s ease-out;
+      opacity: 1;
+    }
+
+    .image-container:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid;
+      transition: opacity 0.3s ease-out;
+      opacity: 0;
+    }
+    nav h1{
+      top: 0%;
+      nav-left: auto;
+    }
+  </style>
+  <style>
+		.logo {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 10px;
+			cursor: pointer;
+		}
+	</style>
+  <style>
+    .logo-container {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <style>
+      body {
+        background-image: url('img/netflix.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+    </style>
+    <!-- HEADER -->
+    <header>
+      <nav style="text-decoration: none; color: whitesmoke;" class="main-nav">
+        <div style="text-decoration: none; color: whitesmoke;" onclick="toggleOptions()">
+          <h1><font size="5.8">➲</h1>
+        </div>
+        <div id="options" style="display: none;">
+          <ul>
+            <li><a style="text-decoration: none; color: whitesmoke;" href="">Refresh</a></li><br>
+            <li><a style="text-decoration: none; color: whitesmoke;" href="https://www.netflix.com/in/browse/genre/34399">Movies</a></li><br>
+            <li><a style="text-decoration: none; color: whitesmoke;" href="https://netflix-category-lookup.netlify.app/category/action-&-adventure">Categories</a></li><br>
+            <li><a style="text-decoration: none; color: whitesmoke;" href="https://help.netflix.com/en/">Help & Support</a></li><br>
+          </ul>
+        </div>
+      </nav>
+    <div class="logo-container">
+      <div class="logo">
+        <img src="img/logo1.jpg" alt="Logo" width="50" height="40" onclick="toggleLogout()">
+      </div>
+    
+      <!-- Logout button -->
+      <div id="logout" style="display: none;">
+        <br></br>
+        <a class="link" style="text-decoration: none; color: white;" href="login.html">Log Out</a>
+      </div>
+    
+      <script>
+        function toggleLogout() {
+          var logoutDiv = document.getElementById("logout");
+          if (logoutDiv.style.display === "none") {
+            logoutDiv.style.display = "block";
+          } else {
+            logoutDiv.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    
+      <div style="display:flex;justify-content:center;align-items:center;">
+        <img src="img/logo.jpg" width="200" height="200">
+      </div>
+      <!-- END OF HEADER -->
+
+      <!-- MAIN CONTAINER -->
+      <section class="main-container">
+        <div class="video-fullscreen">
+          <div class="image-container" id="home">
+            <h1 style="color: #9e9090;">Trending Now!</h1>
+            <div class="box">
+              <a href="vid/status.mp4"><img src="img/murdermystery.jpg" width="300"></a>
+              <a href="vid/status.mp4"><img src="img/mudermystery2.jpg" width="300" alt=""></a>
+              <a href="vid/status.mp4"><img src="img/luther3.jpg" width="300" alt=""></a>
+              <a href="vid/status.mp4"><img src="img/iseeu4.jpg" width="300" alt=""></a>
+              <br></br>
+              <a href="vid/status.mp4"><img src="img/magicianelephant5.jpg" width="300" alt=""></a>
+              <a href="vid/status.mp4"><img src="img/riseofgru6.jpg" width="300" alt=""></a>
+              <a href="vid/status.mp4"><img src="img/hoteltrans7.jpg" width="300" alt=""></a>
+              <a href="vid/status.mp4"><img src="img/8.jpg" width="300" alt=""></a>
+              <br></br>
+              <a href="vid/status.mp4"><img src="img/9.jpg" width="300" alt=""></a>
+              <a href="vid/status.mp4"><img src="img/10.jpg" width="300" alt=""></a>
+            </div>
+          </div>
+      </section>
+
+      <section class="main-container">
+        <div class="image-container" id="home">
+          <h1 style="color: #9e9090;">Top 10 Series!</h1>
+          <div class="box">
+            <a href="vid/status.mp4"><img src="img/s1.jpg" width="300"></a>
+            <a href="vid/status.mp4"><img src="img/s2.jpg" width="300" alt=""></a>
+            <a href="vid/status.mp4"><img src="img/s3.jpg" width="300" alt=""></a>
+            <a href="vid/status.mp4"><img src="img/s4.jpg" width="300" alt=""></a>
+            <br></br>
+            <a href="vid/status.mp4"><img src="img/s5.jpg" width="300" alt=""></a>
+            <a href="vid/status.mp4"><img src="img/s6.jpg" width="300" alt=""></a>
+            <a href="vid/status.mp4"><img src="img/s7.jpg" width="300" alt=""></a>
+            <a href="vid/status.mp4"><img src="img/s8.jpg" width="300" alt=""></a>
+            <br></br>
+            <a href="vid/status.mp4"><img src="img/s9.jpg" width="300" alt=""></a>
+            <a href="vid/status.mp4"><img src="img/s10.jpg" width="300" alt=""></a>
+          </div>
+        </div>
+      </section>
+  </div>
+  </div>
+  <section class="main-container">
+    <h1 style="color: #9e9090;">Top 10 Flims in India!</h1>
+    <div class="image-container" id="home">
+      <a href="vid/status.mp4"><img src="img/i1.jpg" width="300"></a>
+      <a href="vid/status.mp4"><img src="img/i2.jpg" width="300" alt=""></a>
+      <a href="vid/status.mp4"><img src="img/i3.jpg" width="300" alt=""></a>
+      <a href="vid/status.mp4"><img src="img/i4.jpg" width="300" alt=""></a>
+      <br></br>
+      <a href="vid/status.mp4"><img src="img/i5.jpg" width="300" alt=""></a>
+      <a href="vid/status.mp4"><img src="img/i6.jpg" width="300" alt=""></a>
+      <a href="vid/status.mp4"><img src="img/i7.jpg" width="300" alt=""></a>
+      <a href="vid/status.mp4"><img src="img/i8.jpg" width="300" alt=""></a>
+      <br></br>
+      <a href="vid/status.mp4"><img src="img/i8.jpg" width="300" alt=""></a>
+      <a href="vid/status.mp4"><img src="img/i9.jpg" width="300" alt=""></a>
+      <a href="vid/status.mp4"><img src="img/i10.jpg" width="300" alt=""></a>
+    </div>
+
+    <!-- END OF MAIN CONTAINER -->
+
+
+    <!-- FOOTER -->
+    <footer style="color: #9e9090;">
+      <div>
+        <ul>
+          <li><a style="text-decoration: none; color: whitesmoke;" href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></li>
+          <br></br>
+          <li><a style="text-decoration: none; color: whitesmoke;" href="https://help.netflix.com/legal/privacy">Privacy-Policy</a></li>
+          <br></br>
+          <li><a style="text-decoration: none; color: whitesmoke;" href="https://help.netflix.com/en/node/412">FAQ</a></li>
+          <br></br>
+          <li><a style="text-decoration: none; color: whitesmoke;" href="https://devices.netflix.com/en/">Get Started</a></li>
+          <br></br>
+        </ul>
+      </div>
+      </div>
+      <div>
+        <div>
+
+          <p align="center" style="color: #ffffff;">Whatever your taste, and no matter where you live, we give you
+            access to best-in-class TV series, documentaries, feature films and mobile games .</p>
+        </div>
+      </div>
+      </div>
+      <div style="color: #ffffff;">
+        <h3 align="center">
+          Follow Us :
+        </h3>
+        <ul class="center" style="list-style-type: none; display: flex; justify-content: center; align-items: center;">
+          <li>
+            <a href="https://www.facebook.com/netflixus/"><img href="" src="img/fb.png" alt="your_image_description" style="display: block; margin: 0 auto;"
+                width="100"></a>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+          </li>
+          <li>
+            <a href="https://twitter.com/NetflixIndia"><img href="" src="img/twitter.png" alt="your_image_description"
+                style="display: block; margin: 0 auto;" width="100"></a>
+            <br></br>
+            <br></br>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/netflix/?hl=en"><img href="" src="img/insta.png" alt="your_image_description" style="display: block; margin: 0 auto;"
+                width="100"></a>
+          </li>
+
+        </ul>
+
+      </div>
+      <div style="color: #ffffff;">
+        <h6 align="center">NetFlix Web App</h6>
+        <div align="center" style="color: #ffffff;">
+          <a href="https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=en_IN&gl=US" style="color: #ffffff;"><img src="img/01.jpg" alt=""></a>
+          <a href="https://apps.apple.com/us/app/netflix/id363590051" class="ml-3"><img src="img/02.jpg" alt=""></a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

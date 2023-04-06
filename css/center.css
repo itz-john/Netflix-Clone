@@ -1,0 +1,10 @@
+.center {
+  display: flex;
+  justify-content: center;
+}
+.center img {
+  display: block;
+}
+.center-container {
+  text-align: center;
+}

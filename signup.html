@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="path-to-logo-file/Netflix_Symbol_RGB.ico" type="image/x-icon">
+	<title>How to sign up</title>
+	<style>
+		.notification {
+		  background-color: #f2dede;
+		  color: #a94442;
+		  padding: 10px;
+		  margin-bottom: 10px;
+		  border: 1px solid #ebccd1;
+		  border-radius: 3px;
+		}
+		.success-notification {
+		  background-color: #dff0d8;
+		  color: #3c763d;
+		  padding: 10px;
+		  margin-bottom: 10px;
+		  border: 1px solid #d6e9c6;
+		  border-radius: 3px;
+		}
+	  </style>
+<style>
+	.back-btn {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		padding: 10px;
+		background-color: #333;
+		color: #fff;
+		cursor: pointer;
+		border-radius: 5px 0 0 0;
+	}
+</style>
+<body>
+	<style>
+		body {
+			background-image: url('img/netflix.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+	</style>
+
+	<div style="text-decoration: none; color: whitesmoke;" align="center">
+		<h1>Sign In Options</h1>
+		<br></br>
+	</div>
+	
+	  <form align="center" id="reset-form">
+		<label align="center" style="color: rgb(255, 254, 254);" for="email">Email:</label>
+		<input type="email" id="email" placeholder="Enter Email" required>
+		<br>
+	  </br>
+		<label align="center" style="color: rgb(255, 254, 254);" for="email">Name : </label>
+		<input type="name" id="name" placeholder="Enter Username" required>
+		<br>
+	</br>
+		<label align="center" style="color: rgb(255, 254, 254);" for="email">Password : </label>
+		<input type="password" id="password" placeholder="Enter Password" required>
+		<br>
+</br>
+		<input type="submit" value="Create  Account">
+	  </form>
+	  <script>
+		document.getElementById("reset-form").addEventListener("submit", function(event) {
+		  event.preventDefault();
+	
+		  const email = document.getElementById("email").value;
+	
+		  // Check if email is valid
+		  if (!isValidEmail(email)) {
+			alert("Please enter a valid email address");
+			return;
+		  }
+	
+		  // Send password reset email to user's email address
+		  // You can use a third-party email service or your own server-side code to send the email
+	
+		  alert("Account created successfully...!!!");
+		});
+	
+		function isValidEmail(email) {
+		  // Use a regular expression to validate email format
+		  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		  return regex.test(email);
+		}
+	  </script>
+	  <br>
+	</br>
+	<div align="center">
+		<a href="" target="_blank">
+			<img src="https://developers.google.com/identity/images/btn_google_signin_dark_normal_web.png" alt="Sign up with Google">
+		  </a><br>
+		</br>
+	</div>
+	</body>
+
+</html>
