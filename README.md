@@ -3,5 +3,10 @@
 
 
 
+#click the Netflix-Clone Below.
 
-#click the visit site (click unsafe site becoz it contains sign in credentials)
+
+
+
+
+https://admirable-cajeta-18dd93.netlify.app/
